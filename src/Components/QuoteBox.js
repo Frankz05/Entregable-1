@@ -6,6 +6,7 @@ const QuoteBox = () => {
     const[quote, setQuote] = useState(quotes[getRandom()])
     const color = colors[Math.floor(Math.random()* colors.length)]
     document.body.style = `background:${color}`
+    
     const changeQuote =()=>{
         setQuote(quotes[getRandom()])
     }
